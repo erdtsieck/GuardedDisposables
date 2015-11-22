@@ -2,7 +2,7 @@
 
 namespace GuardedDisposables
 {
-    internal sealed class GuardedDisposableException : Exception
+    public sealed class GuardedDisposableException : Exception
     {
         public Exception ExecutionException { get; set; }
         public Exception DisposeException { get; set; }
