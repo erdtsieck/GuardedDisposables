@@ -5,7 +5,7 @@ Since IDisposables are usually used in an using block, they create a try-finally
 ```C#
 try
 {
-    using (var guardedDisposableWrapper = new IThirdPartyDisposable().Guard())
+    using (var guardedDisposableWrapper = new ThirdPartyDisposable().Guard())
     {
         guardedDisposableWrapper.Execute(d => d.Foo());
     }
